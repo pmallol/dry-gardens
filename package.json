@@ -1,0 +1,26 @@
+{
+  "name": "dry-gardens",
+  "version": "1.0.0",
+  "description": "A mini website dedicated to Kyoto's karesansui dry rock gardens",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmallol/dry-gardens.git"
+  },
+  "author": "pmallol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmallol/dry-gardens/issues"
+  },
+  "homepage": "https://github.com/pmallol/dry-gardens#readme",
+  "dependencies": {
+    "next": "^9.3.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
