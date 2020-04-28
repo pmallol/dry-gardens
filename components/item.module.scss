@@ -1,3 +1,20 @@
-.item img {
-  width: 50%;
+@import '../styles/variables';
+
+.item {
+  width: 100%;
+
+  div {
+    background-size: cover;
+    height: 10rem;
+    border-radius: 20px;
+
+    &:hover {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+  }
+  
+  a:hover {
+    color: $black;
+  }
 }
