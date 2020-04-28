@@ -2,16 +2,18 @@ import Nav from '../components/Nav'
 import Image from '../components/Image'
 import Layout from '../components/Layout'
 
+import styles from '../styles/about.module.scss'
+
 export default function About() {
   return (
     <>
       <Layout>
         <Nav />
-        <h1>About</h1>
-        <>
+        <div className={styles.about}>
           <img src="images/tofukuji-1.jpg" alt="Tofukuji Temple" />
           <img src="images/tofukuji-2.jpg" alt="Tofukuji Temple" />
-        </>
+          <img src="images/tofukuji-3.png" alt="Tofukuji Temple" />
+        </div>
       </Layout>
     </>
   )
