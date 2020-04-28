@@ -1,5 +1,7 @@
 import Item from './Item'
 
+import styles from './list.module.scss'
+
 const gardens = [{
   id: 1,
   name: 'Daitokuji',
@@ -36,7 +38,7 @@ const gardens = [{
 
 const List = () => {
   return (
-    <div>
+    <div className={styles.list}>
       {gardens.map(garden => {
         return <Item name={garden.name} image={garden.image} />
       })}
