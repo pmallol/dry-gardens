@@ -2,21 +2,26 @@
 
 .list {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr 3rem auto 3rem auto;
-  grid-template-areas: "i1 i1  .  . i2 i2  .  . i3 i3  .  ."
-                       "i1 i1 i4 i4 i2 i2 i5 i5 i3 i3 i6 i6"
-                       ".  .  i4 i4  .  . i5 i5  .  . i6 i6"
-                       "i7 i7 i4 i4 i8 i8 i5 i5  .  . i6 i6"
-                       "i7 i7  .  . i8 i8  .  .  .  .  .  .";
-  grid-column-gap: 16px;
+}
 
-  > div:nth-child(1) {grid-area: i1;}
-  > div:nth-child(2) {grid-area: i2;}
-  > div:nth-child(3) {grid-area: i3;}
-  > div:nth-child(4) {grid-area: i4;}
-  > div:nth-child(5) {grid-area: i5;}
-  > div:nth-child(6) {grid-area: i6;}
-  > div:nth-child(7) {grid-area: i7;}
-  > div:nth-child(8) {grid-area: i8;}
+@media (min-width: 900px) {
+  .list {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 3rem auto 3rem auto;
+    grid-template-areas: "i1  . i2  . i3  ."
+                         "i1 i4 i2 i5 i3 i6"
+                         ".  i4  . i5  . i6"
+                         "i7 i4 i8 i5  . i6"
+                         "i7  . i8  .  .  .";
+    grid-column-gap: 16px;
+
+    > div:nth-child(1) {grid-area: i1;}
+    > div:nth-child(2) {grid-area: i2;}
+    > div:nth-child(3) {grid-area: i3;}
+    > div:nth-child(4) {grid-area: i4;}
+    > div:nth-child(5) {grid-area: i5;}
+    > div:nth-child(6) {grid-area: i6;}
+    > div:nth-child(7) {grid-area: i7;}
+    > div:nth-child(8) {grid-area: i8;}
+  }
 }
