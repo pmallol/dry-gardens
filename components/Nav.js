@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <Link href="/">
-        <a>Karesansui</a>
+        <a>Kare sansui</a>
       </Link>
       <Link href="/about">
         <a>About</a>
