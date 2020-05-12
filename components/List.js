@@ -23,7 +23,7 @@ const List = () => {
   return (
     <div className={styles.list}>
       {gardens.map(garden => {
-        return <Item name={garden.name} image={garden.image} key={garden.id} />
+        return <Item key={garden.id} name={garden.name} image={garden.image} id={garden.id} />
       })}
     </div>
   )
