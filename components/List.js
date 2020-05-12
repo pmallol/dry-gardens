@@ -13,7 +13,7 @@ const List = () => {
 
   if(gardens === null) {
     return (
-      <div>
+      <div className={styles.list}>
         Loading...
       </div>
     )
