@@ -4,8 +4,7 @@ import Item from './Item'
 import styles from './list.module.scss'
 
 const List = () => {
-  const [gardens, setGardens] = useState(null);
-
+  const [gardens, setGardens] = useState(null)
   useEffect(() => {
     fetch('https://dry-gardens-api.herokuapp.com/gardens', {mode: 'cors'})
     .then(res => res.json())

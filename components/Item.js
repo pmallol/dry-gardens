@@ -7,7 +7,7 @@ const Item = (props) => {
     <div className={styles.item}>
       <Link href="/[id]" as={`/${props.id}`}>
         <a>
-          <div style={{backgroundImage: `url(${props.image})`}} ></div>
+          <div style={{backgroundImage: `url(${props.image})`}}></div>
           <p>{props.name}</p>
         </a>
       </Link>
